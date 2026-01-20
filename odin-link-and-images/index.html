@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links And Images</title>
+</head>
+<body>
+    <h1>Links And Images</h1>
+
+        <!-- Links section -->
+        <h3>Links Section</h3>
+
+        <h4>Open link in new tab Example</h4>
+            <!-- default for target is _self(same page/current tab) -->
+            <!-- Rel is for the relationship between the current page and the linked page -->
+            <!-- noopener & noreferrer is for security reasons 
+            noopener: prevent the linked page from accessing the current page's window object
+            noreferrer: prevent the linked page from accessing the current page's referrer information
+            noreferrer: it implies noopener (so need to use both)
+            --->
+            <a 
+                href="https://www.theodinproject.com/lessons/foundations-links-and-images" 
+                target="_blank" 
+                rel="noreferrer"
+                >
+                Odin Project Link Section
+            </a>
+
+        <!-- Link to same website path & links -->
+        <h4>Relative Link Example</h4>
+            <a href="./about/index.html">
+                Inner about page
+            </a>
+
+        <br/><br/>
+
+        <!-- Images section -->
+        <h3>Image Section</h3>
+        
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="Odin Project Logo" height="100" width="100">
+
+        <img src="../images/test.jpg" alt="local Image test" height="200" width="200">
+
+        <h4>Types Of Images</h4>
+
+        <!-- JPG is the best for photos , high color palette images-->
+        <h6>JPG</h6>
+        <img src="../images/mochi.jpg" alt="mochi image" height="200" width="200">
+
+        <!-- PNG is the best for logos, icons, and images with transparent backgrounds-->
+        <h6>PNG</h6>
+        <img src="../images/mochi.png" alt="mochi image" height="200" width="200">
+
+        <!-- GIF is the best for animated images-->
+        <h6>GIF</h6>
+        <img src="../images/mochi.gif" alt="mochi image" height="200" width="200">
+        
+        <!-- SVG is the best for scalable images-->
+        <h6>SVG</h6>
+        <img src="../images/mochi.svg" alt="mochi image" height="200" width="200">
+
+
+</body>
+</html>
